@@ -1,0 +1,15 @@
+.event {
+  margin-bottom: 1.5rem;
+}
+
+.events-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.schedule {
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}

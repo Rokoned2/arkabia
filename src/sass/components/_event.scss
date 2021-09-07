@@ -1,0 +1,18 @@
+.event {
+  background-color: #fff1a8;
+  display: flex;
+  border-radius: 0.3rem;
+
+  &__color {
+    margin-right: 0.8rem;
+    &--blue {
+      background-color: blue;
+      border-radius: 1rem;
+      width: 0.5rem;
+    }
+  }
+
+  &__info {
+    padding: 0.5rem 0;
+  }
+}

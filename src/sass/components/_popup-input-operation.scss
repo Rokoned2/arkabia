@@ -1,0 +1,29 @@
+.popup-input-operation {
+  background-color: white;
+  position: absolute;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  box-shadow: 0 7px 25px -15px;
+  &__input {
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+    height: 2rem;
+  }
+  &__btn {
+    width: 5rem;
+    text-align: center;
+    align-self: end;
+  }
+  &__form {
+    height: 2rem;
+  }
+
+  &__header {
+    display: flex;
+  }
+}

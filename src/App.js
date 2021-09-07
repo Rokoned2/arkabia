@@ -1,25 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./sass/main.css";
+import Header from "./shared/Header";
+import Calendar from "./components/Calendar";
+import Operation from "./components/Operation";
+import BtnAddOperation from "./components/BtnAddOperation";
+import Events from "./components/Events";
+import Filters from "./components/Filters";
+import perfilImg1 from "./imgs/perfil-img1.png";
+import perfilImg2 from "./imgs/perfil-img2.png";
+// import operations from "./shared/data";
 
-function App() {
+const App = () => {
+  const [operations, setOperations] = useState([]);
+
+  const addOperation = (operationTitle, operationType) => {
+    console.log("operationTitle, operationType", operationTitle, operationType);
+    setOperations((state) => [
+      ...state,
+      {
+        // id,
+        title: operationTitle,
+        type: operationType,
+        state: "Investigación",
+        date: "07/09/2021",
+      },
+    ]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className="main-panel">
+        <div className="operations-view">
+          <div className="operations-view__tabs">
+            <b className="operations-view__tab">Órdenes compradas</b>
+            <b className="operations-view__tab">Calendario</b>
+          </div>
+
+          <div className="options">
+            <Filters />
+            <div>
+              <BtnAddOperation refreshFunction={addOperation} />
+            </div>
+          </div>
+          <div className="operations">
+            {operations.length !== 0 ? (
+              operations.map(({ id, title, type, state, date }) => (
+                <Operation
+                  id={id}
+                  title={title}
+                  type={type}
+                  state={state}
+                  date={date}
+                />
+              ))
+            ) : (
+              <b>No tienes ninguna operación activa.</b>
+            )}
+          </div>
+        </div>
+        <div className="schedule">
+          <Calendar />
+          <Events />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

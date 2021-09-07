@@ -1,0 +1,28 @@
+.main-panel {
+  display: flex;
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-smallest) {
+    display: block;
+  }
+}
+
+.btn-add-operation {
+  position: relative;
+}
+
+.actions-add-operation {
+  position: relative;
+
+  @media only screen and (max-width: $bp-smallest) {
+    display: none;
+  }
+}

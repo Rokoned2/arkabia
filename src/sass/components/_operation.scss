@@ -1,0 +1,48 @@
+.operation {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0 0 1rem 0;
+  align-items: center;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2rem 0;
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: auto;
+  }
+
+  & th,
+  tr {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  &__main-header {
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  &__main-info {
+    display: flex;
+  }
+
+  &__toggle-btn img {
+    width: 1rem;
+  }
+
+  &__state {
+    white-space: nowrap;
+  }
+
+  &__state-img {
+    margin-right: 1rem;
+  }
+
+  &__state-info {
+    display: flex;
+  }
+
+  &__check-icon {
+    margin-right: 2rem;
+  }
+}
