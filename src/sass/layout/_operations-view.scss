@@ -10,7 +10,7 @@
     margin-right: 2rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-medium) {
     margin: 0;
     &__tabs {
       margin: 0 auto;

@@ -1,5 +1,6 @@
 .filters {
   display: flex;
+  justify-content: space-between;
 
   &__search img {
     position: absolute;
@@ -45,17 +46,21 @@
   @media only screen and (max-width: $bp-smallest) {
     &__search img {
       position: absolute;
-      left: 10%;
+      left: 7%;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+    }
+
+    &__search-input {
+      margin-left: 3rem;
     }
 
     &__options {
       display: none;
     }
     &__search {
-      width: 60%;
+      width: 80%;
       border-radius: 1rem;
     }
     &__filters {

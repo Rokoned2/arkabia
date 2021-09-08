@@ -39,10 +39,6 @@ body {
   min-height: 100vh;
 }
 
-b {
-  font-weight: bold;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -128,9 +124,33 @@ body {
   border-spacing: 2rem 0;
 }
 
-@media only screen and (max-width: 31.25em) {
-  .operation {
-    width: auto;
+.operation tr:nth-child(2) {
+  background-color: #ffe4b7;
+}
+
+.operation tr:nth-child(3) {
+  background-color: #ffecbd;
+}
+
+.operation tr:nth-child(4) {
+  background-color: #ffe4b7;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .operation tr:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .operation tr:nth-child(2) {
+    display: none;
+  }
+  .operation tr:nth-child(4):first-child {
+    display: block;
   }
 }
 
@@ -229,6 +249,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .filters__search img {
@@ -279,16 +302,19 @@ body {
 @media only screen and (max-width: 31.25em) {
   .filters__search img {
     position: absolute;
-    left: 10%;
+    left: 7%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+  .filters__search-input {
+    margin-left: 3rem;
   }
   .filters__options {
     display: none;
   }
   .filters__search {
-    width: 60%;
+    width: 80%;
     border-radius: 1rem;
   }
   .filters__filters {
@@ -332,6 +358,10 @@ body {
   cursor: pointer;
   padding: 0 3rem;
   text-align: center;
+}
+
+.btn-add-operation {
+  height: 3rem;
 }
 
 .btn__icon {
@@ -432,7 +462,6 @@ body {
 .header {
   font-size: 1.4rem;
   height: 6.1rem;
-  background-color: transparent;
   padding: 0 2rem;
   width: 100%;
   display: -webkit-box;
@@ -707,7 +736,7 @@ body {
   margin-right: 2rem;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .operations-view {
     margin: 0;
   }
