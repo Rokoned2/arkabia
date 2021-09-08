@@ -2,7 +2,7 @@ const operations = [
   {
     id: 1,
     title: "Carros de juguete para navidad",
-    type: "importación",
+    type: "Importación",
     state: "Investigación",
     date: "19/04/2021",
     team: [],
@@ -18,7 +18,7 @@ const operations = [
   {
     id: 2,
     title: "Cilindros de oxígeno",
-    type: "importación",
+    type: "Importación",
     state: "Fábrica",
     date: "19/04/2021",
     team: [],
@@ -34,7 +34,7 @@ const operations = [
   {
     id: 3,
     title: "Mascarillas KN95",
-    type: "importación",
+    type: "Importación",
     state: "Fábrica",
     date: "19/04/2021",
     team: [],
@@ -50,7 +50,7 @@ const operations = [
   {
     id: 4,
     title: "Bicicletas eléctricas",
-    type: "importación",
+    type: "Importación",
     state: "Tránsito",
     date: "19/04/2021",
     team: [],
@@ -66,7 +66,7 @@ const operations = [
   {
     id: 5,
     title: "Zapatillas colores variados",
-    type: "importación",
+    type: "Importación",
     state: "Puerto de origen",
     date: "19/04/2021",
     team: [],

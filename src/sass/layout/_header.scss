@@ -6,6 +6,8 @@
   width: 100%;
   display: flex;
   align-items: center;
+  max-width: 160rem;
+  margin: 0 auto;
 
   &__burger-menu {
     display: none;
