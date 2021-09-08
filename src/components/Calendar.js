@@ -5,14 +5,14 @@ import leftArrow from "../imgs/left-arrow.svg";
 const Calendar = () => {
   return (
     <div className="calendar">
-      <div class="calendar__month-indicator">
+      <div className="calendar__month-indicator">
         <img src={leftArrow} alt="" />
         <time datetime="2019-02">
           <b>Marzo 2021</b>
         </time>
         <img src={rightArrow} alt="" />
       </div>
-      <div class="calendar__day-of-week">
+      <div className="calendar__day-of-week">
         <div>lun</div>
         <div>mar</div>
         <div>mier</div>
@@ -22,7 +22,7 @@ const Calendar = () => {
         <div>dom</div>
       </div>
 
-      <div class="calendar__date-grid">
+      <div className="calendar__date-grid">
         <button>
           <time datetime="2019-02-01">28</time>
         </button>

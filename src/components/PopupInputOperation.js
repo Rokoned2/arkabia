@@ -10,7 +10,6 @@ const PopupInputOperation = ({
 
   const handleSubmit = () => {
     if (!value) return;
-    setOperationTitle(value);
     refreshFunction();
   };
 
@@ -26,7 +25,10 @@ const PopupInputOperation = ({
           type="text"
           placeholder="Ej: Máquina para tejer"
           value={value}
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e) => {
+            setOperationTitle(e.target.value);
+            setValue(e.target.value);
+          }}
         />
       </div>
       <div className="btn popup-input-operation__btn" onClick={handleSubmit}>

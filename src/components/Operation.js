@@ -10,11 +10,11 @@ const Operation = ({ id, title, type, state, date }) => {
   return (
     <table className="operation" key={id}>
       <tr>
-        <th colspan="4" className="operation__main-header">
+        <th colSpan="4" className="operation__main-header">
           <div className="operation__main-info">
             <img className="operation__check-icon" src={checkIcon} alt="" />
             <span>
-              <div>{title}</div>
+              <p>{title}</p>
               <div>{type}</div>
             </span>
           </div>
@@ -50,7 +50,7 @@ const Operation = ({ id, title, type, state, date }) => {
             </td>
             <td>Eloy</td>
             <td>PEN S/ 200.00</td>
-            <td colspan="3">Victor: Completa el paso 1 requeri...</td>
+            <td colSpan="3">Victor: Completa el paso 1 requeri...</td>
           </tr>
           <tr>
             <td>Grupo Aduan Agencia de Aduana</td>
@@ -60,7 +60,7 @@ const Operation = ({ id, title, type, state, date }) => {
             </td>
             <td>Julissa</td>
             <td>USD $ 8,331.79</td>
-            <td colspan="3">Julissa: Gracias por aceptar la cotizac...</td>
+            <td colSpan="3">Julissa: Gracias por aceptar la cotizac...</td>
           </tr>
         </>
       )}

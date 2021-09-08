@@ -14,9 +14,9 @@ const App = () => {
   const [operations, setOperations] = useState(operationsData);
 
   const addOperation = (operationTitle, operationType) => {
+    console.log("operationTitle, operationType", operationTitle, operationType);
     setOperations((state) => [
       {
-        // id,
         title: operationTitle,
         type: operationType,
         state: "Investigación",
