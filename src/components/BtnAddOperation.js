@@ -7,11 +7,8 @@ const BtnAddOperation = ({ refreshFunction }) => {
   const [operationType, setOperationType] = useState("");
   const [popupInputActive, setPopupInputActive] = useState(false);
   const [operationTitle, setOperationTitle] = useState("");
-  console.log("operationType", operationType);
-  console.log("operationTitle", operationTitle);
 
-  const createOperation = (operationTitle, operationType) => {
-    console.log("operationTitle, operationType", operationTitle, operationType);
+  const createOperation = () => {
     refreshFunction(operationTitle, operationType);
   };
 

@@ -208,8 +208,8 @@ body {
 
 .operation {
   background-color: white;
-  border-radius: 1rem;
-  padding: 0 0 1rem 0;
+  border-radius: 3rem;
+  padding: 1rem 0 1rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

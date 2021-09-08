@@ -6,7 +6,6 @@ const PopupInputOperation = ({
   operationType,
   setOperationTitle,
 }) => {
-  console.log("operationType", operationType);
   const [value, setValue] = useState("");
 
   const handleSubmit = () => {

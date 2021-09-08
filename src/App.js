@@ -8,15 +8,13 @@ import Events from "./components/Events";
 import Filters from "./components/Filters";
 import perfilImg1 from "./imgs/perfil-img1.png";
 import perfilImg2 from "./imgs/perfil-img2.png";
-// import operations from "./shared/data";
+import operationsData from "./shared/data";
 
 const App = () => {
-  const [operations, setOperations] = useState([]);
+  const [operations, setOperations] = useState(operationsData);
 
   const addOperation = (operationTitle, operationType) => {
-    console.log("operationTitle, operationType", operationTitle, operationType);
     setOperations((state) => [
-      ...state,
       {
         // id,
         title: operationTitle,
@@ -24,6 +22,7 @@ const App = () => {
         state: "Investigación",
         date: "07/09/2021",
       },
+      ...state,
     ]);
   };
 
