@@ -14,7 +14,6 @@ const App = () => {
   const [operations, setOperations] = useState(operationsData);
 
   const addOperation = (operationTitle, operationType) => {
-    console.log("operationTitle, operationType", operationTitle, operationType);
     setOperations((state) => [
       {
         title: operationTitle,

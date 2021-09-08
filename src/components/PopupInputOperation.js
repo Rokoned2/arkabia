@@ -5,6 +5,7 @@ const PopupInputOperation = ({
   refreshFunction,
   operationType,
   setOperationTitle,
+  showPopupInput,
 }) => {
   const [value, setValue] = useState("");
 
@@ -16,7 +17,7 @@ const PopupInputOperation = ({
   return (
     <div className="popup-input-operation">
       <div className="popup-input-operation__header">
-        <img src={leftArrow} alt="" />
+        <img src={leftArrow} alt="" onClick={() => showPopupInput(false)} />
         <h3> Colocar un título a tu {operationType}</h3>
       </div>
       <div className="popup-input-operation__form">

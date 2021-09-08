@@ -7,7 +7,6 @@ const BtnAddOperation = ({ refreshFunction }) => {
   const [operationType, setOperationType] = useState("");
   const [popupInputActive, setPopupInputActive] = useState(false);
   const [operationTitle, setOperationTitle] = useState("");
-  console.log("operationTitle", operationTitle);
 
   const createOperation = () => {
     refreshFunction(operationTitle, operationType);
@@ -18,7 +17,7 @@ const BtnAddOperation = ({ refreshFunction }) => {
       <div
         className="btn btn-add-operation"
         onClick={() => {
-          if (operationType) return;
+          if (popupInputActive) return;
           showOptions(!options);
         }}
       >
@@ -36,6 +35,7 @@ const BtnAddOperation = ({ refreshFunction }) => {
           refreshFunction={createOperation}
           operationType={operationType}
           setOperationTitle={setOperationTitle}
+          showPopupInput={setPopupInputActive}
         />
       )}
     </div>

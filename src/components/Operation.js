@@ -14,7 +14,7 @@ const Operation = ({ id, title, type, state, date }) => {
           <div className="operation__main-info">
             <img className="operation__check-icon" src={checkIcon} alt="" />
             <span>
-              <p>{title}</p>
+              <b>{title}</b>
               <div>{type}</div>
             </span>
           </div>
